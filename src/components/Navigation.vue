@@ -1,14 +1,14 @@
 <template>
   <header class="header">
       <nav class="header__bar">
-          <a href="#" class="header__title"><h1>Synth</h1></a>
+          <a href="#" v-scroll-to="'#hero'" class="header__title"><h1>Synth</h1></a>
           <img src="../assets/nav_btn.svg" @click="playNavAnim()" alt="Navigation Menu Icon" class="header__btn">
               <ul class="header__navigation">
                   <span @click="removeNavAnim()" class="header__close">X</span>
-                  <li @click="removeNavAnim()" class="header__item"><a v-scroll-to="'#home'" class="header__link" href="#">Home</a></li>
-                  <li @click="removeNavAnim()" class="header__item"><a class="header__link" href="#">Products</a></li>
-                  <li @click="removeNavAnim()" class="header__item"><a class="header__link" href="#">About</a></li>
-                  <li @click="removeNavAnim()" class="header__item"><a class="header__link" href="#">Contact</a></li>
+                  <li @click="removeNavAnim()" class="header__item"><a v-scroll-to="{el: '#hero', duration: 1000}" class="header__link" href="#">Home</a></li>
+                  <li @click="removeNavAnim()" class="header__item"><a v-scroll-to="{el: '#products', duration: 1000}" class="header__link" href="#">Products</a></li>
+                  <li @click="removeNavAnim()" class="header__item"><a v-scroll-to="{el: '#about', duration: 1000}" class="header__link" href="#">About</a></li>
+                  <li @click="removeNavAnim()" class="header__item"><a v-scroll-to="{el: '#contact', duration: 1000}" class="header__link" href="#">Contact</a></li>
               </ul>
       </nav>
   </header>
