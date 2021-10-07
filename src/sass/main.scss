@@ -2,3 +2,22 @@
 @import "modules/_transitions.scss";
 @import "modules/_header.scss";
 @import "modules/_hero.scss";
+@import "modules/_products.scss";
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.wrapper {
+  margin: 50px 0;
+}
+
+.hero {
+  margin-top: 0;
+}

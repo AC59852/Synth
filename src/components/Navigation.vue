@@ -1,7 +1,7 @@
 <template>
   <header class="header">
       <nav class="header__bar">
-          <a href="#" v-scroll-to="'#hero'" class="header__title"><h1>Synth</h1></a>
+          <a href="#" v-scroll-to="{el: '#hero', duration: 800}" class="header__title"><h1>Synth</h1></a>
           <img src="../assets/nav_btn.svg" @click="playNavAnim()" alt="Navigation Menu Icon" class="header__btn">
               <ul class="header__navigation">
                   <span @click="removeNavAnim()" class="header__close">X</span>

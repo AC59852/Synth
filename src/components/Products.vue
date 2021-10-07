@@ -1,6 +1,6 @@
 <template>
   <section>
-      <h2>Stay Clean, Feel Clean</h2>
+      <h2 class="products__heading">Stay Clean, Feel Clean</h2>
       <div v-if="mobile" class="products__wrapper">
           <div :class="'products__card products__' + card.type" v-for="card in cards.slice(0, 3)" :key="card.id">
               <span class="products__expand">+</span>
@@ -15,6 +15,7 @@
               <h3 class="products__title">{{ card.name }}</h3>
           </div>
       </div>
+      <button class="products__btn">Show More</button>
   </section>
 </template>
 
