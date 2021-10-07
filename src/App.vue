@@ -4,10 +4,12 @@
 import Navigation from "./components/Navigation.vue";
 import Hero from "./components/Hero.vue";
 import Products from "./components/Products.vue";
+import About from "./components/About.vue";
 </script>
 
 <template>
   <Navigation />
   <Hero id="hero" class="hero"/>
   <Products id="products" class="products"/>
+  <About id="about" class="about"/>
 </template>
