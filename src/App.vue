@@ -10,8 +10,8 @@ import Contact from "./components/Contact.vue";
 
 <template>
   <Navigation />
-  <Hero id="hero" class="hero"/>
-  <Products id="products" class="products"/>
-  <About id="about" class="about"/>
-  <Contact id="contact" class="contact"/>
+  <Hero id="hero" class="hero wrapper"/>
+  <Products id="products" class="products wrapper"/>
+  <About id="about" class="about wrapper"/>
+  <Contact id="contact" class="contact wrapper"/>
 </template>
