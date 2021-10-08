@@ -1,24 +1,5 @@
 .products {
-    &__heading {
-        position: relative;
-        font-family: $heading-font;
-        font-size: $mobile-heading-fs;
-        text-align: center;
-        margin-bottom: 55px;
-
-        &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            background: black;
-            width: 40px;
-            height: 2px;
-            margin-top: 22px;
-        }
-    }
+    &__heading { @include title-styles; }
 
     &__card {
         position: relative;
