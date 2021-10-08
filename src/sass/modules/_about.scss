@@ -1,0 +1,43 @@
+.about {
+    &__quote {
+        font-family: $heading-font;
+        font-size: 32px;
+        line-height: 43px;
+        letter-spacing: $main-ls;
+        width: 80%;
+        margin: 0 auto 40px;
+    }
+
+    &__story {
+        width: 92%;
+        margin: 0 auto;
+        box-shadow: $main-ds;
+        border-radius: $main-br;
+        padding: 9% 0;
+    }
+    
+    &__title { 
+        @include title-styles;
+        margin-bottom: 45px;
+    }
+
+    &__paraWrapper {
+        font-family: $body-font;
+        font-size: 13px;
+        line-height: 19px;
+        width: 88%;
+        margin: 0 auto 25px;
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        padding: 3% 4%;
+        background: transparent;
+        border: solid 1px black;
+        font-family: $body-font;
+        border-radius: 90000px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+}
