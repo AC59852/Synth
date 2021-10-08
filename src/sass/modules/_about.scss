@@ -30,14 +30,6 @@
     }
 
     &__btn {
-        display: block;
-        margin: 0 auto;
-        padding: 3% 4%;
-        background: transparent;
-        border: solid 1px black;
-        font-family: $body-font;
-        border-radius: 90000px;
-        font-size: 13px;
-        cursor: pointer;
+        @include btn-styles;
     }
 }
