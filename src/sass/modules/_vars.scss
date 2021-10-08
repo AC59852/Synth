@@ -27,3 +27,17 @@ $mobile-heading-fs: 26px;
         margin-top: 22px;
     }
 }
+
+@mixin btn-styles {
+    display: block;
+    margin-left: auto;
+    margin-right: 13%;
+    width: 95px;
+    padding: 10px 0;
+    background: transparent;
+    border: solid 1px black;
+    font-family: $body-font;
+    border-radius: 90000px;
+    font-size: 13px;
+    cursor: pointer;
+}

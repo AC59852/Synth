@@ -6,9 +6,9 @@
               <ul class="header__navigation">
                   <span @click="removeNavAnim()" class="header__close">X</span>
                   <li @click="removeNavAnim()" class="header__item"><a v-scroll-to="{el: '#hero', duration: 1000}" class="header__link" href="#">Home</a></li>
-                  <li @click="removeNavAnim()" class="header__item"><a v-scroll-to="{el: '#products', duration: 1000}" class="header__link" href="#">Products</a></li>
-                  <li @click="removeNavAnim()" class="header__item"><a v-scroll-to="{el: '#about', duration: 1000}" class="header__link" href="#">About</a></li>
-                  <li @click="removeNavAnim()" class="header__item"><a v-scroll-to="{el: '#contact', duration: 1000}" class="header__link" href="#">Contact</a></li>
+                  <li @click="removeNavAnim()" class="header__item"><a v-scroll-to="{el: '#products', duration: 1000, offset: -60}" class="header__link" href="#">Products</a></li>
+                  <li @click="removeNavAnim()" class="header__item"><a v-scroll-to="{el: '#about', duration: 1000, offset: -60}" class="header__link" href="#">About</a></li>
+                  <li @click="removeNavAnim()" class="header__item"><a v-scroll-to="{el: '#contact', duration: 1000, offset: -60}" class="header__link" href="#">Contact</a></li>
               </ul>
       </nav>
   </header>

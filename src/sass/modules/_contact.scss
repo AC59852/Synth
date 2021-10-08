@@ -1,0 +1,95 @@
+.contact {
+    &__title { @include title-styles }
+    margin-bottom: 8% !important;
+
+    &__form {
+        width: 93%;
+        margin: 0 auto 30px;
+        display: flex;
+        flex-direction: column;
+        padding: 11% 0;
+        box-shadow: $main-ds;
+        border-radius: $main-br;
+    }
+
+    &__input {
+        width: 70%;
+        margin: 0 auto 15%;
+        border: none;
+        border-bottom: 1px solid black;
+        font-family: $body-font;
+        font-size: 13px;
+
+        &::placeholder {
+            font-family: $heading-font;
+            color: black;
+            font-size: 16px;
+        }
+    }
+
+    textarea { 
+        resize: none; 
+        white-space: nowrap;
+        padding-bottom: 4px;
+
+        &::-webkit-scrollbar {
+            display: none;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none; 
+        }
+    }
+
+    &__submit {
+        @include btn-styles;
+    }
+
+    &__questions {
+        width: 90%;
+        margin: 0 auto;
+        box-shadow: $main-ds;
+        border-radius: $main-br;
+        padding: 11% 0;
+    }
+
+    &__questionsList {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &__question {
+        margin: 0 0 20px 0;
+        font-family: $body-font;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        line-height: 155%;
+        position: relative;
+        width: 92%;
+        margin-left: auto;
+
+        &:last-child {
+            margin-bottom: 5px;
+        }
+
+        &::before {
+            position: absolute;
+            content: url("../icons/chevron-right.svg");
+            width: 18px;
+            height: 18px;
+            padding-right: 3%;
+            left: -13%;
+        }
+    }
+
+    &__extra {
+        text-align: center;
+        width: 92%;
+        margin: 0 auto;
+        font-family: $body-font;
+        font-size: 13px;
+        color: #5F5F5F;
+        padding-top: 15px;
+        line-height: 120%;
+        letter-spacing: $main-ls;
+    }
+}
