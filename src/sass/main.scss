@@ -5,6 +5,7 @@
 @import "modules/_products.scss";
 @import "modules/_about.scss";
 @import "modules/_contact.scss";
+@import "modules/_queries.scss";
 
 body::-webkit-scrollbar {
     display: none;
@@ -14,12 +15,6 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-}
-
-.wrapper {
-  margin: 50px 0;
-}
-
-.hero {
-  margin-top: 0;
+  max-width: 500px;
+  margin: 0 auto;
 }

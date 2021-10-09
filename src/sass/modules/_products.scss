@@ -4,6 +4,7 @@
     &__card {
         position: relative;
         width: 80%;
+        max-width: 300px;
         margin: 40px auto;
         box-shadow: $main-ds;
         border-radius: $main-br;

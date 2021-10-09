@@ -1,0 +1,128 @@
+@media screen and (min-width: 375px) {
+
+    .header {
+        height: 56px;
+
+        &__title { font-size: 26px; }
+
+        &__item { margin: 4% 0; }
+
+        &__link { font-size: 30px; }
+
+        &__close { font-size: 22px; }
+    }
+
+    .wrapper {
+        margin: 60px 0;
+    }
+
+    .hero {
+        margin-top: 0;
+
+        &__heading {
+            font-size: 46px;
+        }
+    }
+
+    .products {
+        &__heading { font-size: 30px; }
+
+        &__title {
+            font-size: 19px;
+        }
+
+        &__card {
+            width: 73%;
+        }
+
+        &__img {
+            height: 250px;
+            padding: 10px 0 15px;
+        }
+
+        &__btn {
+            width: 115px;
+            font-size: 14px;
+            padding: 10px 0;
+        }
+    }
+
+    .about {
+        &__title { font-size: 30px; }
+
+        &__btn {
+            width: 115px;
+            font-size: 14px;
+            padding: 10px 0;
+            margin: 0 auto;
+        }
+    }
+
+    .contact {
+        &__title { font-size: 30px; }
+
+        &__submit {
+            width: 115px;
+            font-size: 14px;
+            padding: 10px 0;
+        }
+    }
+}
+
+@media screen and (min-width: 410px) {
+
+    .products {
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 3%;
+            justify-content: center;
+        }
+
+        &__card {
+            width: 44%;
+            margin: 0 2% 5%;
+        }
+
+        &__img {
+            height: 175px;
+        }
+    }
+
+    .about {
+       &__quote {
+           width: 90%;
+           font-size: 42px;
+           line-height: 53px;
+       }
+
+       &__paraWrapper {
+           font-size: 15px;
+           line-height: 23px;
+       }
+    }
+
+    .contact {
+        &__input {
+            border-width: 2px;
+
+            &::placeholder {
+                font-size: 18px;
+            }
+        }
+
+        &__questions {
+            width: 80%;
+        }
+
+        &__question {
+            margin:  0 0 30px auto;
+        }
+
+        &__extra {
+            width: 75%;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}
