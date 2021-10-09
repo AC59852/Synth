@@ -7,6 +7,14 @@ $body-font: 'Open Sans';
 
 $mobile-heading-fs: 26px;
 
+.wrapper {
+    margin: 50px 0;
+  }
+  
+  .hero {
+    margin-top: 0;
+  }
+
 @mixin title-styles {
     position: relative;
     font-family: $heading-font;

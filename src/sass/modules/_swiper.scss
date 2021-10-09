@@ -34,3 +34,11 @@
         &-active { background: white; }
     }
 }
+
+@media screen and (min-width: 375px) {
+    .hero {
+        &__slide {
+            padding-bottom: 130%;
+        }
+    }
+}

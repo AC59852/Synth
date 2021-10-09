@@ -6,6 +6,18 @@
         letter-spacing: $main-ls;
         width: 80%;
         margin: 0 auto 40px;
+
+        &::before {
+            display: inline;
+            content: "“";
+            font-size: 120%;
+        }
+
+        &::after {
+            display: inline;
+            content: "”";
+            font-size: 120%;
+        }
     }
 
     &__story {
@@ -14,6 +26,7 @@
         box-shadow: $main-ds;
         border-radius: $main-br;
         padding: 9% 0;
+        transition: all 0.6s ease;
     }
     
     &__title { 
@@ -27,6 +40,10 @@
         line-height: 19px;
         width: 88%;
         margin: 0 auto 25px;
+
+        p {
+            margin: 10px 0;
+        }
     }
 
     &__btn {
