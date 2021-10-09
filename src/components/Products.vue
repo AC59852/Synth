@@ -15,7 +15,7 @@
               <h3 class="products__title">{{ card.name }}</h3>
           </div>
       </div>
-      <button class="products__btn">Show More</button>
+      <span class="products__soon">*More Scents and Products Coming Soon</span>
   </section>
 </template>
 
@@ -29,11 +29,6 @@ export default {
             
             cards: [
                 {id: 0, name: 'Lemon Grass', type: 'Hand Sanitizer', img: 'bottle.png'},
-                {id: 1, name: 'Vanilla', type: 'Hand Sanitizer', img: 'bottle.png'},
-                {id: 2, name: 'Eucalyptus', type: 'Hand Sanitizer', img: 'bottle.png'},
-                {id: 3, name: 'Lavender', type: 'Hand Sanitizer', img: 'bottle.png'},
-                {id: 4, name: 'Cinnamon', type: 'Hand Sanitizer', img: 'bottle.png'},
-                {id: 5, name: 'Pine', type: 'Hand Sanitizer', img: 'bottle.png'},
             ]
         }
     },

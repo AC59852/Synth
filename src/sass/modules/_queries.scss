@@ -7,7 +7,10 @@
 
         &__item { margin: 4% 0; }
 
-        &__link { font-size: 30px; }
+        &__link { 
+            font-size: 30px;
+            top: 35px;
+        }
 
         &__close { font-size: 22px; }
     }
@@ -20,7 +23,7 @@
         margin-top: 0;
 
         &__heading {
-            font-size: 46px;
+            font-size: 50px;
         }
     }
 
@@ -32,7 +35,7 @@
         }
 
         &__card {
-            width: 73%;
+            width: 70%;
         }
 
         &__img {
@@ -40,10 +43,15 @@
             padding: 10px 0 15px;
         }
 
-        &__btn {
-            width: 115px;
-            font-size: 14px;
-            padding: 10px 0;
+        // &__btn {
+        //     border-width: 1.5px;
+        //     width: 115px;
+        //     font-size: 14px;
+        //     padding: 11px 0;
+        // }
+
+        &__soon {
+            font-size: 13px;
         }
     }
 
@@ -51,9 +59,10 @@
         &__title { font-size: 30px; }
 
         &__btn {
+            border-width: 1.5px;
             width: 115px;
             font-size: 14px;
-            padding: 10px 0;
+            padding: 11px 0;
             margin: 0 auto;
         }
     }
@@ -62,31 +71,24 @@
         &__title { font-size: 30px; }
 
         &__submit {
-            width: 115px;
+            border-width: 1.5px;
+            width: 105px;
             font-size: 14px;
-            padding: 10px 0;
+            padding: 11px 0;
         }
     }
 }
 
-@media screen and (min-width: 410px) {
+@media screen and (min-width: 390px) {
 
     .products {
-        &__wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 3%;
-            justify-content: center;
-        }
+        &__heading { font-size: 36px; }
 
-        &__card {
-            width: 44%;
-            margin: 0 2% 5%;
-        }
+        &__expand { font-size: 25px; }
 
-        &__img {
-            height: 175px;
-        }
+        &__img { height: 280px; }
+
+        &__title { font-size: 22px; }
     }
 
     .about {
@@ -96,33 +98,92 @@
            line-height: 53px;
        }
 
+       &__title { font-size: 36px; }
+
        &__paraWrapper {
-           font-size: 15px;
+           font-size: 14px;
            line-height: 23px;
+           width: 88%;
        }
+
+       &__btn {
+           width: 120px;
+           font-size: 15px;
+           padding: 12px 0; 
+        }
     }
 
     .contact {
+
+        &__title { font-size: 36px; }
+
+        &__form {
+            padding: 14% 0 11%;
+        }
+
         &__input {
             border-width: 2px;
+            font-size: 15px;
 
             &::placeholder {
                 font-size: 18px;
             }
         }
 
+        &__submit { 
+            font-size: 15px;
+            padding: 12px 0; 
+        }
+
         &__questions {
-            width: 80%;
+            width: 85%;
         }
 
         &__question {
+            font-size: 15px;
+            line-height: 135%;
             margin:  0 0 30px auto;
+
+            &::before {
+                width: 22px;
+                height: 22px;
+            }
         }
 
         &__extra {
-            width: 75%;
+            width: 80%;
             font-size: 14px;
             line-height: 17px;
+        }
+    }
+}
+
+@media screen and (min-width:428px) {
+    // .products {
+    //     &__wrapper {
+    //         display: flex;
+    //         flex-wrap: wrap;
+    //         margin-bottom: 3%;
+    //         justify-content: center;
+    //     }
+
+    //     &__card {
+    //         width: 44%;
+    //         margin: 0 2% 5%;
+    //     }
+
+    //     &__img {
+    //         height: 175px;
+    //     }
+
+    //     &__btn { font-size: 15px; }
+    // }
+
+    .contact {
+        &__submit {
+            font-size: 15px;
+            padding: 10px 0;
+            width: 100px;
         }
     }
 }
