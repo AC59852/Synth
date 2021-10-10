@@ -42,3 +42,19 @@
         }
     }
 }
+
+@media screen and (min-width: 1080px) {
+    .hero {
+        &__slide { padding-bottom: 60%; }
+        &__heading { font-size: 64px; }
+    }
+
+    .swiper-pagination { bottom: 20px; }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero {
+        &__slide { padding-bottom: 50%; }
+        &__heading { font-size: 70px; }
+    }
+}
