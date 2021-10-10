@@ -1,6 +1,10 @@
 <template>
   <section>
-      <h2 class="products__heading">Stay Clean, Feel Clean</h2>
+      <h2 v-if="mobile" class="products__heading">Stay Clean, Feel Clean</h2>
+      <div v-if="desktop" class="products__textWrapper">
+        <h2 class="products__heading products__heading--desktop">Enjoy Life Without Worries. Stay Clean, Feel Clean.</h2>
+        <span class="products__soon">*More Scents and Products Coming Soon</span>
+      </div>
       <div v-if="mobile" class="products__wrapper">
           <div :class="'products__card products__' + card.type" v-for="card in cards.slice(0, 4)" :key="card.id">
               <span class="products__expand">+</span>
@@ -15,7 +19,7 @@
               <h3 class="products__title">{{ card.name }}</h3>
           </div>
       </div>
-      <span class="products__soon">*More Scents and Products Coming Soon</span>
+      <span v-if="mobile" class="products__soon">*More Scents and Products Coming Soon</span>
   </section>
 </template>
 
@@ -23,7 +27,8 @@
 export default {
     data() {
         return {
-            mobile: true,
+            mobile: false,
+            desktop: true,
 
             currentCard: {},
             
