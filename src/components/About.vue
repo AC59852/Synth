@@ -2,8 +2,8 @@
   <section>
     <aside class="about__quote">{{ quote }}</aside>
     <div class="about__wrapper">
-        <div class="about__imgBox" v-if="desktop">
-            <img v-for="img in aboutImgs.slice(0,1)" :src="'/imgs/' + img.link" alt="Small Product Image" :key="img.id">
+        <div class="about__imgBox" v-if="desktop || tablet">
+            <div v-for="img in aboutImgs.slice(0,2)" :key="img.id" class="about__imgWrapper" :style="{backgroundImage: 'url(/imgs/' + img.link + ')'}"></div>
         </div>
         <div class="about__story">
             <h2 class="about__title">My Story</h2>
@@ -14,8 +14,8 @@
             </div>
             <button @click="setStory()" class="about__btn">{{ aboutBtn }}</button>
         </div>
-        <div class="about__imgBox" v-if="desktop">
-            <img v-for="img in aboutImgs.slice(2,3)" :src="'/imgs/' + img.link" alt="Small Product Image" :key="img.id">
+        <div class="about__imgBox" v-if="desktop || tablet">
+            <div v-for="img in aboutImgs.slice(2,4)" :key="img.id" class="about__imgWrapper" :style="{backgroundImage: 'url(/imgs/' + img.link + ')'}"></div>
         </div>
     </div>  
   </section>
@@ -25,7 +25,8 @@
 export default {
     data() {
         return {
-            mobile: true,
+            mobile: false,
+            tablet: true,
             desktop: false,
 
             storyExpanded: false,
@@ -40,7 +41,14 @@ export default {
                 para2: `Pretium a augue diam nunc mi. In auctor purus cursus vestibulum sit. Felis cras egestas urna semper auctor sed. Pulvinar ullamcorper amet neque, ut dictumst scelerisque turpis. Consequat nibh et risus tincidunt pellentesque lobortis proin in. Volutpat laoreet dictum tellus venenatis, quis et. In tempor maecenas pulvinar tempor, eget. Cursus vestibulum tortor cursus lacus enim amet laoreet pulvinar. Ac tempus ultrices at vitae potenti eget. Faucibus purus feugiat tortor vestibulum, est feugiat diam habitasse sagittis. Faucibus mattis et eu.`,
 
                 para3: `Fames ut adipiscing commodo tincidunt vivamus leo pretium. In nibh fringilla massa pharetra enim. Euismod integer egestas ultricies fringilla velit commodo. Morbi duis eu, enim nibh. Rhoncus nibh convallis turpis in. Sapien mollis sed semper at. Semper nulla dictum consequat felis quisque fringilla. Id molestie purus eu leo in mattis cursus morbi diam. Aliquam velit maecenas duis erat condimentum arcu cursus augue eu. Nisi, vestibulum mi non cras.`,
-            }
+            },
+
+            aboutImgs: [
+                {id: 0, link: 'about_placeholder1.jpg'},
+                {id: 1, link: 'about_placeholder2.jpg'},
+                {id: 2, link: 'about_placeholder3.jpg'},
+                {id: 3, link: 'about_placeholder4.jpg'},
+            ]
         }
     },
 

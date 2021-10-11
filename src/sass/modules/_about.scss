@@ -49,4 +49,22 @@
     &__btn {
         @include btn-styles;
     }
+
+    &__imgBox {
+        flex: 0 1 auto;
+        width: 10%;
+        margin: 0 auto;
+    }
+
+    &__imgWrapper {
+        position: relative;
+        width: 100%;
+        max-width: 125px;
+        padding-bottom: min(100%, 125px);
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.25);
+        margin: 100% 0;
+    }
 }
