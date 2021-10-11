@@ -20,7 +20,7 @@
     }
 
     .hero {
-        margin-top: 0;
+        margin-top: 0 !important;
 
         &__heading {
             font-size: 50px;
@@ -190,6 +190,10 @@
 
 
 @media screen and (min-width: 1080px) {
+    .wrapper {
+        margin: 120px 0;
+    }
+
     .header {
         &__btn { display: none; }
 
@@ -244,6 +248,33 @@
                 font-size: 50px;
                 &::after { display: none; }
             }
+        }
+    }
+
+    .about {
+        &__quote {
+            width: 55%;
+            font-size: 56px;
+            line-height: 70px;
+            margin: 0 0 40px 7%;
+         }
+
+         &__wrapper {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+
+        &__story {
+            width: 55%;
+            padding: 5% 0;
+            margin: 0;
+            flex: 0 1 auto;
+        } 
+
+        &__paraWrapper {
+            line-height: 25px;
+            width: 89%;
         }
     }
 }
