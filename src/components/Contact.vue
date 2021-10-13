@@ -17,14 +17,16 @@
                 id="formMsg" class="contact__input" maxlength="260" rows="1" aria-label="Message"></textarea>
               <input type="submit" class="contact__submit" name="submit" aria-label="Submit Button" value="Send">
           </form>
-          <div class="contact__questions">
-              <h2 class="contact__title">Ask About These</h2>
-              <ul class="contact__questionsList">
+              <div class="contact__questionsWrapper">
+              <div class="contact__questions">
+                <h2 class="contact__title contact__title--questions">Ask About These</h2>
+                <ul class="contact__questionsList">
                   <li class="contact__question" v-for="question in questions" :key="question.id">{{ question.content }}</li>
-              </ul>
-          </div>
-          <p class="contact__extra">Do not hesitate to ask about anything else that isn’t on the list. These are just common questions, or answers I can get to you quickly.</p>
-      </div>
+                </ul>
+              </div>
+                <p class="contact__extra">Do not hesitate to ask about anything else that isn’t on the list. These are just common questions, or answers I can get to you quickly.</p>
+              </div>
+        </div>
   </section>
 </template>
 
@@ -46,6 +48,17 @@ export default {
                 {id: 4, content: 'Excepteur sint occaecat cupidatat non proident, sunt'},
             ]
         }
+    },
+
+    mounted() {
+      this.removeTextAreaWhiteSpace()
+    },
+
+    methods: {
+      removeTextAreaWhiteSpace() {
+        var myTxtArea = document.getElementById('formMsg');
+        myTxtArea.value = myTxtArea.value.replace(/^\s*|\s*$/g,'');
+      }
     }
 }
 </script>

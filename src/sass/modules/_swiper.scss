@@ -52,9 +52,19 @@
     .swiper-pagination { bottom: 20px; }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1400px) {
     .hero {
         &__slide { padding-bottom: 50%; }
         &__heading { font-size: 70px; }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .hero {
+        &__slide { padding-bottom: 43%; }
+        &__heading { 
+            font-size: 76px;
+            width: 36%; 
+        }
     }
 }

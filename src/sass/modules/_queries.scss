@@ -262,7 +262,7 @@
          &__wrapper {
              display: flex;
              justify-content: center;
-             align-items: center;
+             align-items: flex-start;
          }
 
         &__story {
@@ -276,6 +276,38 @@
             line-height: 25px;
             width: 89%;
         }
+    }
+
+    .contact {
+        &__wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        &__form { 
+            padding: 6% 0;
+            flex: 0 1 auto;
+            width: 40%;
+            margin: 0;
+            max-width: 700px;
+        }
+
+        &__questionsWrapper {
+            flex: 0 1 auto;
+            width: 40%;
+        }
+
+        &__questions { 
+            width: 75%;
+        }
+
+        &__title { 
+            font-size: 36px; 
+            &--questions { font-size: 26px; }
+        }
+
+        &__extra { width: 75%; }
     }
 }
 
@@ -315,5 +347,101 @@
                 &::after { display: none; }
             }
         }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .header {
+        &__navigation { margin-right: 7%; }
+    }
+
+    .products {
+        &__heading {
+            &--desktop {
+                width: 100%;
+                font-size: 60px;
+            }
+        }
+
+        &__img { height: 315px; }
+    }
+
+    .about {
+        &__imgWrapper { margin: 55% auto 0; }
+
+        &__quote {
+            font-size: 76px;
+            line-height: 96px;
+            margin-bottom: 75px;
+            width: 800px;
+        }
+
+        &__title { font-size: 40px; }
+
+        &__story { padding: 4% 0; }
+
+        &__paraWrapper {
+            width: 85%;
+
+            p { margin: 15px 0; }
+        }
+    }
+
+    .contact {
+        &__title { 
+            font-size: 40px;
+            margin-bottom: 100px;
+            &--questions { 
+                margin-bottom: 75px;
+                font-size: 26px;
+            }
+        }
+
+        &__form {
+            padding: 5% 0 3%;
+            width: 35%;
+            max-width: 550px;
+        }
+
+        &__input { margin: 0 auto 13%; }
+
+        &__questionsWrapper {
+            width: 30%;
+            margin: 0;
+        }
+
+        &__questions {
+            width: max(350px, 65%);
+            max-width: 400px;
+        }
+
+        &__extra { width: 320px; }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .products {
+        &__heading {
+            &--desktop {
+                font-size: 63px;
+            }
+        }
+    }
+
+    .about {
+        &__imgWrapper {
+            margin: 0 auto;
+        }
+
+        &__imgBox {
+            align-self: center;
+            div:nth-child(1) {
+                margin-bottom: 70%;
+            }
+        }
+    }
+
+    .contact {
+        &__form { width: 35%; }
     }
 }
