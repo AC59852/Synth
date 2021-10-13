@@ -48,6 +48,17 @@ export default {
                 {id: 4, content: 'Excepteur sint occaecat cupidatat non proident, sunt'},
             ]
         }
+    },
+
+    mounted() {
+      this.removeTextAreaWhiteSpace()
+    },
+
+    methods: {
+      removeTextAreaWhiteSpace() {
+        var myTxtArea = document.getElementById('formMsg');
+        myTxtArea.value = myTxtArea.value.replace(/^\s*|\s*$/g,'');
+      }
     }
 }
 </script>
