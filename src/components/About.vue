@@ -52,10 +52,31 @@ export default {
         }
     },
 
+    mounted() {
+        this.setSize();
+        window.addEventListener('resize', this.setSize);
+    },
+
     methods: {
         setStory() {
             this.storyExpanded = !this.storyExpanded
             this.aboutBtn = this.storyExpanded ? 'Hide' : 'Read More';
+        },
+
+        setSize() {
+            if (window.innerWidth < 768) {
+                this.mobile = true;
+                this.tablet = false;
+                this.desktop = false;
+            } else if (window.innerWidth >= 768) {
+                this.mobile = false;
+                this.tablet = true;
+                this.desktop = false;
+            } else if (window.innerWidth >= 1080) {
+                this.mobile = false;
+                this.tablet = false;
+                this.desktop = true;
+            }
         }
     }
 }
