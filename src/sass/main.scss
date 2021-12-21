@@ -3,6 +3,7 @@
 @import "modules/_header.scss";
 @import "modules/_hero.scss";
 @import "modules/_products.scss";
+@import "modules/_popup.scss";
 @import "modules/_about.scss";
 @import "modules/_contact.scss";
 @import "modules/_queries.scss";
@@ -16,4 +17,36 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   margin: 0 auto;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: all 0.7s ease;
+
+  .popup__wrapper {
+    transition: all 0.7s ease;
+  }
+}
+
+.fade-enter-active {
+  opacity: 0;
+
+  .popup__wrapper {
+    top: 45%;
+  }
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+
+  .popup__wrapper {
+    top: 45%;
+  }
+}
+
+.fade-enter-to {
+  opacity: 1;
+
+  .popup__wrapper {
+    top: 50%;
+  }
 }

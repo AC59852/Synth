@@ -55,6 +55,12 @@
         }
     }
 
+    .popup {
+        &__text {
+            height: auto;
+        }
+    }
+
     .about {
         &__title { font-size: 30px; }
 
