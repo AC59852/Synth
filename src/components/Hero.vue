@@ -55,5 +55,8 @@
       Swiper,
       SwiperSlide,
     },
+
+    created() {
+    }
   };
 </script>

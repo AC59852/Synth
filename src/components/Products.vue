@@ -37,6 +37,23 @@ export default {
             ]
         }
     },
+
+    mounted() {
+        this.checkScreenSize();
+        window.addEventListener('resize', this.checkScreenSize);
+    },
+
+    methods: {
+        checkScreenSize() {
+            if (window.innerWidth < 768) {
+                this.mobile = true;
+                this.desktop = false;
+            } else {
+                this.mobile = false;
+                this.desktop = true;
+            }
+        }
+    }
 }
 </script>
 
